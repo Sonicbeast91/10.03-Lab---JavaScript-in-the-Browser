@@ -1,25 +1,71 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
-  <meta name="description" content="">
+  <title>Model Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
+  <h1>Starting Lineup</h1>
+
+  <form id="lineupForm">
+    <!-- Status -->
+    <p>
+      <fieldset>
+        <legend>Status:</legend>
+
+        <input type="radio" id="status-draft" name="status" value="Draft">
+        <label for="status-draft">Draft</label>
+
+        <input type="radio" id="status-final" name="status" value="Final" checked>
+        <label for="status-final">Final</label>
+      </fieldset>
+    </p>
+
+    <!-- Date -->
+    <p>
+      <label for="gameDate">Date:</label>
+      <select id="gameDate" name="gameDate">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+
+    <!-- Players -->
+    <p>
+      <fieldset>
+        <legend>Players:</legend>
+
+        <input type="checkbox" id="p-aarav"  name="players" value="Aarav Agarwal">
+        <label for="p-aarav">Aarav Agarwal</label><br>
+
+        <input type="checkbox" id="p-ava"    name="players" value="Ava Johnson">
+        <label for="p-ava">Ava Johnson</label><br>
+
+        <input type="checkbox" id="p-julio"  name="players" value="Julio Ortiz">
+        <label for="p-julio">Julio Ortiz</label><br>
+
+        <input type="checkbox" id="p-liam"   name="players" value="Liam Rubio">
+        <label for="p-liam">Liam Rubio</label><br>
+
+        <input type="checkbox" id="p-emma"   name="players" value="Emma Witherspoon">
+        <label for="p-emma">Emma Witherspoon</label>
+      </fieldset>
+    </p>
+
+    <!-- Submit -->
+    <p>
+      <input id="submitBtn" type="submit" value="Submit">
+    </p>
+  </form>
+
+  <!-- Where we’ll display the concatenated summary -->
+  <p id="output"></p>
+
   <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
-
-  <h2 id="joke-display"></h2>
 </body>
-
 </html>

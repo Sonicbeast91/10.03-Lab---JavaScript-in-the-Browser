@@ -1,7 +1,5 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
-}
+/* Existing styles kept; you can add more if you like */
+
 
 table {
   border-collapse: collapse;
@@ -27,3 +25,10 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #e9e9e9;
 }
+
+/* Tiny tweaks so the form looks like the screenshot */
+form { max-width: 420px; }
+fieldset { padding: 8px 12px; }
+legend { font-weight: 600; }
+label { margin-right: 8px; }
+#output { margin-top: 10px; font-weight: 600; }
